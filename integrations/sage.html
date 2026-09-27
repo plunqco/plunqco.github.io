@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sage integration — Plunq</title>
+    <meta
+      name="description"
+      content="When a change is approved on the project side, someone re-keys it into the cost record. Plunq would carry it across, and keep the two in step."
+    />
+    <meta name="theme-color" content="#1B2330" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../assets/plunq.css" />
+    <script src="../assets/posthog.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../assets/plunq.js" defer></script>
+  </head>
+  <body data-calendly="https://calendly.com/ktzanidakis-plunq/30min">
+    <script>
+      document.documentElement.classList.add("js");
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+    </script>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- NAV -->
+    <header class="nav solid" id="nav">
+      <div class="wrap nav-inner">
+        <a href="../index.html" class="brand" aria-label="Plunq home">
+          <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true">
+            <rect class="bm-frame" x="0.75" y="0.75" width="24.5" height="24.5" />
+            <path class="bm-frame" d="M7 0.75 V13 H19" />
+            <rect class="bm-node" x="16.5" y="10.5" width="5" height="5" />
+          </svg>
+          Plunq
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="../index.html#problem">The problem</a>
+          <a href="../index.html#workflows">What it does</a>
+          <a href="index.html">Integrations</a>
+          <a href="../index.html#proof">Proof</a>
+          <a href="../index.html#faq">FAQ</a>
+        </nav>
+        <a href="https://calendly.com/ktzanidakis-plunq/30min" class="btn btn-primary nav-cta" data-book>Book a call <span class="arrow" aria-hidden="true">→</span></a>
+        <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="sheet" aria-label="Open menu">
+          <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 5h16M1 13h16" /></svg>
+        </button>
+      </div>
+      <div class="sheet" id="sheet">
+        <nav class="wrap" aria-label="Mobile">
+          <a href="../index.html#problem">The problem <span aria-hidden="true">→</span></a>
+          <a href="../index.html#workflows">What it does <span aria-hidden="true">→</span></a>
+          <a href="index.html">Integrations <span aria-hidden="true">→</span></a>
+          <a href="../index.html#proof">Proof <span aria-hidden="true">→</span></a>
+          <a href="../index.html#faq">FAQ <span aria-hidden="true">→</span></a>
+          <a href="https://calendly.com/ktzanidakis-plunq/30min" class="btn btn-primary" data-book>Book a call <span class="arrow" aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="section int-hero" aria-labelledby="int-title">
+        <span class="frame" aria-hidden="true"></span>
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Plunq</a><span aria-hidden="true">/</span>
+            <a href="index.html">Integrations</a><span aria-hidden="true">/</span>
+            <span aria-current="page">Sage</span>
+          </nav>
+
+          <div class="int-head">
+            <div>
+              <div class="int-mark">
+                <img src="../icons/sage.png" alt="" width="40" height="40" />
+                <div>
+                  <h1 class="int-name" id="int-title">Sage</h1>
+                  <p class="int-kind">Accounting and ERP · <span class="on-request">Upon request</span></p>
+                </div>
+              </div>
+              <p class="int-lede">
+                When a change is approved on the project side, someone re-keys it into the cost record. Plunq would carry it across, and keep the two in step.
+              </p>
+              <div class="int-actions">
+                <a href="https://calendly.com/ktzanidakis-plunq/30min" class="btn btn-primary" data-book>Book a 30-min call <span class="arrow" aria-hidden="true">→</span></a>
+                <a href="index.html" class="btn btn-ghost">See all integrations</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="site3d" aria-hidden="true">
+                <div class="scene">
+                  <!-- ground: hoarding, hut, materials -->
+                  <svg class="layer layer-ground" viewBox="0 0 640 430">
+                    <defs>
+                      <pattern id="hatch3" width="6" height="6" patternUnits="userSpaceOnUse">
+                        <path d="M0 6 L6 0" stroke="#dbe0e8" stroke-width="1" />
+                      </pattern>
+                    </defs>
+                    <line class="ln3 ink" x1="10" y1="380" x2="630" y2="380" />
+                    <path class="ln3 soft dash" d="M40 392 H600" />
+                    <!-- site hut -->
+                    <path class="ln3" d="M58 330 H150 V380 H58 Z M58 330 L72 316 H164 L150 330 M150 380 L164 366 V316" />
+                    <rect class="fill3" x="96" y="348" width="22" height="32" />
+                    <path class="ln3 soft" d="M96 348 H118 V380" />
+                    <!-- material stacks -->
+                    <path class="ln3 soft" d="M470 366 H560 V380 H470 Z M470 366 L480 358 H570 L560 366 M560 380 L570 372 V358" />
+                    <path class="ln3 soft" d="M486 352 H548 V366 H486 Z M486 352 L496 344 H558 L548 352" />
+                    <!-- hoarding line -->
+                    <path class="ln3 soft" d="M10 396 H630 M60 396 V406 M140 396 V406 M220 396 V406 M300 396 V406 M380 396 V406 M460 396 V406 M540 396 V406 M620 396 V406" />
+                  </svg>
+
+                  <!-- the frame going up -->
+                  <svg class="layer layer-frame" viewBox="0 0 640 430">
+                    <g class="ln3">
+                      <path d="M170 380 V150 M250 380 V150 M330 380 V150 M410 380 V172 M490 380 V210" />
+                      <path d="M162 330 H498 M162 280 H498 M162 230 H498 M162 180 H418 M162 150 H338" />
+                    </g>
+                    <g class="ln3 soft">
+                      <path d="M410 230 L490 280 M490 230 L410 280 M410 280 L490 330 M490 280 L410 330" />
+                      <path d="M502 380 V206 M516 380 V206 M502 350 H516 M502 320 H516 M502 290 H516 M502 260 H516 M502 230 H516" />
+                    </g>
+                    <rect class="fill3" x="171" y="331" width="78" height="48" />
+                    <rect class="fill3" x="251" y="331" width="78" height="48" />
+                    <rect class="fill3" x="171" y="281" width="78" height="48" />
+                    <rect class="fill3" x="331" y="281" width="78" height="48" />
+                    <rect class="fill3" x="251" y="231" width="78" height="48" />
+                    <g class="lbl3">
+                      <text x="112" y="226">L03</text><text x="112" y="276">L02</text>
+                    </g>
+                    <path class="ln3 soft" d="M136 230 H156 M136 280 H156" />
+                  </svg>
+
+                  <!-- the crane -->
+                  <svg class="layer layer-crane" viewBox="0 0 640 430">
+                    <g class="ln3">
+                      <path d="M556 380 V96 M578 380 V96" />
+                      <path d="M556 96 L567 48 L578 96" />
+                      <path d="M250 74 H624 M250 92 H624" />
+                      <rect x="596" y="92" width="26" height="14" class="fill3" />
+                      <rect x="579" y="96" width="16" height="13" />
+                    </g>
+                    <polyline class="ln3 soft" points="556,380 578,346 556,312 578,278 556,244 578,210 556,176 578,142 556,108 578,96" />
+                    <polyline class="ln3 soft" points="250,92 268,74 286,92 304,74 322,92 340,74 358,92 376,74 394,92 412,74 430,92 448,74 466,92 484,74 502,92 520,74 538,92 556,74" />
+                    <path class="ln3 soft" d="M567 48 L300 74 M567 48 L624 74" />
+                    <rect class="ln3" x="318" y="88" width="14" height="6" fill="#fff" />
+                    <path class="ln3 soft hoist-rope" d="M325 94 V206" />
+                    <g class="hoist-load">
+                      <path class="ln3" d="M300 214 H350 M300 214 L308 206 H358 L350 214 M350 214 V220 H300 V214" />
+                      <rect class="node3" x="321" y="204" width="8" height="8" />
+                    </g>
+                  </svg>
+
+                  <div class="board">
+                    <img src="../icons/sage.png" alt="" width="22" height="22" />
+                    <span>Sage</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAPABILITIES -->
+      <section class="section section--flush" aria-labelledby="caps-title">
+        <span class="frame" aria-hidden="true"></span>
+        <div class="wrap">
+          <p class="eyebrow">Together</p>
+          <h2 class="claim" id="caps-title">What Plunq and Sage <em>do together</em></h2>
+
+          <ul class="caps">
+            <li>
+              <p class="col-tag">01 · Watches</p>
+              <h3>Starts when a change is approved</h3>
+              <p>An approved change order or variation starts the workflow.</p>
+            </li>
+            <li>
+              <p class="col-tag">02 · Carries</p>
+              <h3>Moves it once, not twice</h3>
+              <p>Creates the matching record in your cost system, without re-keying.</p>
+            </li>
+            <li>
+              <p class="col-tag">03 · Chases</p>
+              <h3>Chases what is missing</h3>
+              <p>Flags anything that cannot be matched, rather than guessing.</p>
+            </li>
+            <li>
+              <p class="col-tag">04 · Proves</p>
+              <h3>Leaves the evidence</h3>
+              <p>What moved, when, and on whose approval.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- RELATED -->
+      <section class="section section--flush" aria-labelledby="rel-title">
+        <span class="frame" aria-hidden="true"></span>
+        <div class="wrap">
+          <p class="eyebrow">Keep exploring</p>
+          <h2 class="claim" id="rel-title">Other integrations</h2>
+          <ul class="rel">
+            <li><a href="procore.html"><img src="../icons/procore.svg" alt="" width="26" height="26" /><b>Procore</b></a></li>
+            <li><a href="autodesk-construction-cloud.html"><img src="../icons/autodesk.svg" alt="" width="26" height="26" /><b>Autodesk Construction Cloud</b></a></li>
+            <li><a href="outlook.html"><img src="../icons/outlook.svg" alt="" width="26" height="26" /><b>Microsoft Outlook</b></a></li>
+            <li><a href="slack.html"><img src="../icons/slack.svg" alt="" width="26" height="26" /><b>Slack</b></a></li>
+            <li><a href="asite.html"><img src="../icons/asite.png" alt="" width="26" height="26" /><b>Asite</b></a></li>
+            <li><a href="sharepoint.html"><img src="../icons/sharepoint.svg" alt="" width="26" height="26" /><b>Microsoft SharePoint</b></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="on-ink">
+      <section class="ask" id="access" aria-labelledby="access-title">
+        <span class="frame" aria-hidden="true"></span>
+        <div class="wrap ask-grid">
+          <div>
+            <h2 id="access-title">Fewer chases. <span class="serif">A complete record.</span></h2>
+            <p class="lede">See how Plunq would run the handoffs around Sage on your projects. Pick a time straight from the calendar.</p>
+          </div>
+          <p><a href="https://calendly.com/ktzanidakis-plunq/30min" class="btn btn-primary" data-book>Book a 30-min call <span class="arrow" aria-hidden="true">→</span></a></p>
+        </div>
+      </section>
+
+      <div class="links">
+        <div class="wrap">
+          <div class="links-grid">
+            <div>
+              <a href="../index.html" class="brand" aria-label="Plunq home">
+                <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true">
+                  <rect class="bm-frame" x="0.75" y="0.75" width="24.5" height="24.5" />
+                  <path class="bm-frame" d="M7 0.75 V13 H19" />
+                  <rect class="bm-node" x="16.5" y="10.5" width="5" height="5" style="fill:#7DAEE8" />
+                </svg>
+                Plunq
+              </a>
+              <p class="about">Plunq does the chasing between the tools your construction projects already run — so the right information reaches site, and there's proof it got there.</p>
+            </div>
+            <nav aria-labelledby="f-product">
+              <h3 id="f-product">Product</h3>
+              <ul>
+                <li><a href="../index.html#problem">The problem</a></li>
+                <li><a href="../index.html#workflows">What it does</a></li>
+                <li><a href="index.html">Integrations</a></li>
+                <li><a href="../index.html#day">A day on site</a></li>
+                <li><a href="../index.html#proof">Proof</a></li>
+                <li><a href="../index.html#faq">FAQ</a></li>
+              </ul>
+            </nav>
+            <nav aria-labelledby="f-int">
+              <h3 id="f-int">Integrations</h3>
+              <ul>
+                <li><a href="procore.html">Procore</a></li>
+                <li><a href="autodesk-construction-cloud.html">Autodesk Construction Cloud</a></li>
+                <li><a href="outlook.html">Microsoft Outlook</a></li>
+                <li><a href="slack.html">Slack</a></li>
+                <li><a href="autodesk-construction-cloud.html">Autodesk Construction Cloud</a></li>
+                <li><a href="outlook.html">Microsoft Outlook</a></li>
+                <li><a href="slack.html">Slack</a></li>
+                <li><a href="autodesk-construction-cloud.html">Autodesk Construction Cloud</a></li>
+                <li><a href="outlook.html">Microsoft Outlook</a></li>
+                <li><a href="slack.html">Slack</a></li>
+                <li><a href="autodesk-construction-cloud.html">Autodesk Construction Cloud</a></li>
+                <li><a href="outlook.html">Microsoft Outlook</a></li>
+                <li><a href="slack.html">Slack</a></li>
+                <li><a href="autodesk-construction-cloud.html">Autodesk Construction Cloud</a></li>
+                <li><a href="outlook.html">Microsoft Outlook</a></li>
+                <li><a href="slack.html">Slack</a></li>
+                <li><a href="index.html">Autodesk Construction Cloud</a></li>
+                <li><a href="index.html">Outlook</a></li>
+                <li><a href="index.html">Slack</a></li>
+              </ul>
+            </nav>
+            <nav aria-labelledby="f-company">
+              <h3 id="f-company">Company</h3>
+              <ul>
+                <li><a href="../index.html#access">Request access</a></li>
+                <li><a href="mailto:info@plunq.co">Contact</a></li>
+                <li><a href="../privacy.html">Privacy policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="legal">
+            <p>© 2026 Plunq, Inc. All rights reserved.</p>
+            <p class="mono">Fewer chases · Current drawings · Complete record</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
